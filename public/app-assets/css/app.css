@@ -1,0 +1,15 @@
+@import url("bootstrap-extended.css");
+@import url("colors.css");
+@import url("components.css");
+@media screen and (min-width: 992px) {
+    .header-navbar .navbar-header .navbar-brand .brand-logo {
+        width: 75%;
+        margin-top: -9px;
+        position: relative;
+        left: 20%;
+    }
+
+}
+.review-product{
+    width: 35%;
+}
