@@ -15,7 +15,7 @@
 
 		<!-- Favicon
 		============================================ -->
-		<link rel="shortcut icon" type="image/x-icon" href="images/fav_icon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="/images/fav_icon.ico">
 
 		<!-- Google web fonts
 		============================================ -->
@@ -23,22 +23,22 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!-- Libs CSS
 		============================================ -->
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/fontello.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/animate.css">
+		<link rel="stylesheet" href="/css/fontello.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		
 		<!-- Theme CSS
 		============================================ -->
-		<link rel="stylesheet" href="js/rs-plugin/css/settings.css">
-		<link rel="stylesheet" href="js/owlcarousel/owl.carousel.css">
-		<link rel="stylesheet" href="js/colorpicker/colorpicker.css">
-		<link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="/js/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="/js/owlcarousel/owl.carousel.css">
+		<link rel="stylesheet" href="/js/colorpicker/colorpicker.css">
+		<link rel="stylesheet" href="/js/arcticmodal/jquery.arcticmodal.css">
+		<link rel="stylesheet" href="/css/style.css">
 
 		<!-- JS Libs
 		============================================ -->
-		<script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/queryloader2.min.js"></script>
+		<script src="/js/jquery-2.1.1.min.js"></script>
+		<script src="/js/queryloader2.min.js"></script>
 		
 		<script>
 
@@ -65,12 +65,12 @@
 
 		</script>
 		
-		<script src="js/modernizr.js"></script>
+		<script src="/js/modernizr.js"></script>
 
 		<!-- Old IE stylesheet
 		============================================ -->
 		<!--[if lte IE 9]>
-			<link rel="stylesheet" type="text/css" href="css/oldie.css">
+			<link rel="stylesheet" type="text/css" href="/css/oldie.css">
 		<![endif]-->
 	</head>
 	<body class="front_page promo_popup">
@@ -179,8 +179,8 @@
 
 						<div class="wrapper">
 
-							<button class="change_bg" data-src="images/image_bg_1.jpg"></button>
-							<button class="change_bg" data-src="images/image_bg_2.jpg"></button>
+							<button class="change_bg" data-src="/images/image_bg_1.jpg"></button>
+							<button class="change_bg" data-src="/images/image_bg_2.jpg"></button>
 
 						</div>
 
@@ -286,7 +286,7 @@
 
 									<a href="/" class="logo">
 
-										<img src="images/logo.png" alt="">
+										<img src="/images/logo.png" alt="">
 
 									</a>
 
@@ -350,13 +350,13 @@
 
 										<div class="alignright site_settings">
 
-											<span class="current open_"><img src="images/flag_en.jpg" alt="">English</span>
+											<span class="current open_"><img src="/images/flag_en.jpg" alt="">English</span>
 
 											<ul class="dropdown site_setting_list language">
 
-												<li class="animated_item"><a href="#"><img src="images/flag_en.jpg" alt=""> English</a></li>
-												<li class="animated_item"><a href="#"><img src="images/flag_g.jpg" alt=""> German</a></li>
-												<li class="animated_item"><a href="#"><img src="images/flag_s.jpg" alt=""> Spanish</a></li>
+												<li class="animated_item"><a href="#"><img src="/images/flag_en.jpg" alt=""> English</a></li>
+												<li class="animated_item"><a href="#"><img src="/images/flag_g.jpg" alt=""> German</a></li>
+												<li class="animated_item"><a href="#"><img src="/images/flag_s.jpg" alt=""> Spanish</a></li>
 
 											</ul>
 
@@ -771,7 +771,7 @@
 
 													<div class="clearfix sc_product">
 
-														<a href="#" class="product_thumb"><img src="images/sc_img_1.jpg" alt=""></a>
+														<a href="#" class="product_thumb"><img src="/images/sc_img_1.jpg" alt=""></a>
 
 														<a href="#" class="product_name">Natural Factors PGX Daily Ultra Matrix...</a>
 
@@ -791,7 +791,7 @@
 
 													<div class="clearfix sc_product">
 
-														<a href="#" class="product_thumb"><img src="images/sc_img_2.jpg" alt=""></a>
+														<a href="#" class="product_thumb"><img src="/images/sc_img_2.jpg" alt=""></a>
 
 														<a href="#" class="product_name">Oral-B Glide Pro-Health Floss...</a>
 
@@ -811,7 +811,7 @@
 
 													<div class="clearfix sc_product">
 
-														<a href="#" class="product_thumb"><img src="images/sc_img_3.jpg" alt=""></a>
+														<a href="#" class="product_thumb"><img src="/images/sc_img_3.jpg" alt=""></a>
 
 														<a href="#" class="product_name">Culturelle Kids! Probi-<br>otic Packets 30 ea</a>
 
@@ -1005,7 +1005,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod1.jpg" alt="">
+												<img src="/images/83x83_prod1.jpg" alt="">
 
 											</a>
 
@@ -1031,7 +1031,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod2.jpg" alt="">
+												<img src="/images/83x83_prod2.jpg" alt="">
 
 											</a>
 
@@ -1057,7 +1057,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod3.jpg" alt="">
+												<img src="/images/83x83_prod3.jpg" alt="">
 
 											</a>
 
@@ -1101,7 +1101,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod4.jpg" alt="">
+												<img src="/images/83x83_prod4.jpg" alt="">
 
 											</a>
 
@@ -1127,7 +1127,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod5.jpg" alt="">
+												<img src="/images/83x83_prod5.jpg" alt="">
 
 											</a>
 
@@ -1153,7 +1153,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod6.jpg" alt="">
+												<img src="/images/83x83_prod6.jpg" alt="">
 
 											</a>
 
@@ -1197,7 +1197,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod7.jpg" alt="">
+												<img src="/images/83x83_prod7.jpg" alt="">
 
 											</a>
 
@@ -1223,7 +1223,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod8.jpg" alt="">
+												<img src="/images/83x83_prod8.jpg" alt="">
 
 											</a>
 
@@ -1249,7 +1249,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod9.jpg" alt="">
+												<img src="/images/83x83_prod9.jpg" alt="">
 
 											</a>
 
@@ -1293,7 +1293,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod10.jpg" alt="">
+												<img src="/images/83x83_prod10.jpg" alt="">
 
 											</a>
 
@@ -1319,7 +1319,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod11.jpg" alt="">
+												<img src="/images/83x83_prod11.jpg" alt="">
 
 											</a>
 
@@ -1345,7 +1345,7 @@
 											
 											<a href="#" class="product_thumb">
 												
-												<img src="images/83x83_prod12.jpg" alt="">
+												<img src="/images/83x83_prod12.jpg" alt="">
 
 											</a>
 
@@ -1395,14 +1395,14 @@
 
 						<ul class="payments">
 
-							<li><img src="images/payment_1.png" alt=""></li>
-							<li><img src="images/payment_2.png" alt=""></li>
-							<li><img src="images/payment_3.png" alt=""></li>
-							<li><img src="images/payment_4.png" alt=""></li>
-							<li><img src="images/payment_5.png" alt=""></li>
-							<li><img src="images/payment_6.png" alt=""></li>
-							<li><img src="images/payment_7.png" alt=""></li>
-							<li><img src="images/payment_8.png" alt=""></li>
+							<li><img src="/images/payment_1.png" alt=""></li>
+							<li><img src="/images/payment_2.png" alt=""></li>
+							<li><img src="/images/payment_3.png" alt=""></li>
+							<li><img src="/images/payment_4.png" alt=""></li>
+							<li><img src="/images/payment_5.png" alt=""></li>
+							<li><img src="/images/payment_6.png" alt=""></li>
+							<li><img src="/images/payment_7.png" alt=""></li>
+							<li><img src="/images/payment_8.png" alt=""></li>
 
 						</ul>
 						
@@ -1635,23 +1635,23 @@
 		
 		<!-- Include Libs & Plugins
 		============================================ -->
-		<script src="js/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="js/jquery.appear.js"></script>
-		<script src="js/owlcarousel/owl.carousel.min.js"></script>
-		<script src="js/jquery.countdown.plugin.min.js"></script>
-		<script src="js/jquery.countdown.min.js"></script>
-		<script src="js/arcticmodal/jquery.arcticmodal.js"></script>
-		<script src="twitter/jquery.tweet.min.js"></script>
-		<script src="js/colorpicker/colorpicker.js"></script>
-		<script src="js/retina.min.js"></script>
+		<script src="/js/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="/js/jquery.appear.js"></script>
+		<script src="/js/owlcarousel/owl.carousel.min.js"></script>
+		<script src="/js/jquery.countdown.plugin.min.js"></script>
+		<script src="/js/jquery.countdown.min.js"></script>
+		<script src="/js/arcticmodal/jquery.arcticmodal.js"></script>
+		<script src="/twitter/jquery.tweet.min.js"></script>
+		<script src="/js/colorpicker/colorpicker.js"></script>
+		<script src="/js/retina.min.js"></script>
 		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js"></script>
 
 		<!-- Theme files
 		============================================ -->
-		<script src="js/theme.styleswitcher.js"></script>
-		<script src="js/theme.plugins.js"></script>
-		<script src="js/theme.core.js"></script>
+		<script src="/js/theme.styleswitcher.js"></script>
+		<script src="/js/theme.plugins.js"></script>
+		<script src="/js/theme.core.js"></script>
 		
 		<!-- extra js -->
 		@yield('extra-js')
