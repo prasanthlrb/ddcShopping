@@ -14,8 +14,14 @@
             
             <li><a href="/account/address" class="address"><i class="fas fa-address-book"></i> Manage Address</a></li>
             <li><a href="/account/review" class="rating-rev"><i class="fas fa-comments"></i> My Reviews & Ratings</a></li>
-            <li> <a href="#"><i class="fas fa-power-off"></i> Logout</a> </li>
+            <li> <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+   <i class="fas fa-power-off"></i> Logout</a> </li>
+            
 
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
         </ul>
 
     </section><!--/ .section_offset -->

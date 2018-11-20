@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		
 		<!-- Basic page needs
 		============================================ -->
 		<title>DDC | Home</title>
@@ -39,34 +40,10 @@
 		============================================ -->
 		<script src="/js/jquery-2.1.1.min.js"></script>
 		<script src="/js/queryloader2.min.js"></script>
-		
-		<script>
-
-			$(document).ready(function(){
-
-				$("body").queryLoader2({
-	    			barHeight : 4,
-	    			backgroundColor : '#fff',
-	    			barColor : '#ff6a00',
-	    			minimumTime : 2000,
-	    			onComplete : function(){
-
-						// show promo popup
-	    				if($.arcticmodal && $('body').hasClass('promo_popup')){
-							$.arcticmodal({
-								url : "modals/promo.html"
-							});
-						}
-
-	    			}
-	    		});
-
-			});
-
-		</script>
+	
 		
 		<script src="/js/modernizr.js"></script>
-
+		
 		<!-- Old IE stylesheet
 		============================================ -->
 		<!--[if lte IE 9]>
@@ -75,193 +52,9 @@
 	</head>
 	<body class="front_page promo_popup">
 		<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=194364450619191";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-		<!-- - - - - - - - - - - - - - Styleswitcher - - - - - - - - - - - - - - - - -->
-<!-- 
-		<div id="styleswitcher">
 
-			<button class="icon_btn middle_btn open_styleswitcher"><i class="icon-cog-alt"></i></button>
-
-			<div class="dropdown stsw">
-
-				<div class="animated_item">
-
-					<h3 class="title">Style Switcher</h3>
-
-				</div>
-
-				<div class="animated_item">
-
-					Layout type
-					<div class="sw_section switch">
-
-						<button class="theme_button active" data-layout="wide">Wide</button>
-						<button class="theme_button" data-layout="boxed">Boxed</button>
-
-					</div>
-
-					Header style
-					<div class="sw_section">
-
-						<div class="custom_select" id="change_header_type">
-
-							<select>
-
-								<option value="Header 1">Header 1</option>
-								<option value="Header 2">Header 2</option>
-								<option value="Header 3">Header 3</option>
-								<option value="Header 4">Header 4</option>
-								<option value="Header 5">Header 5</option>
-								<option value="Header 6">Header 6</option>
-
-							</select>
-
-						</div>
-
-					</div>
-
-					Footer style
-					<div class="sw_section">
-
-						<div class="custom_select" id="change_footer_type">
-
-							<select>
-
-								<option value="Footer 1">Footer 1</option>
-								<option value="Footer 2">Footer 2</option>
-								<option value="Footer 3">Footer 3</option>
-								<option value="Footer 4">Footer 4</option>
-								<option value="Footer 5">Footer 5</option>
-								<option value="Footer 6">Footer 6</option>
-
-							</select>
-
-						</div>
-
-					</div>
-
-					Background for boxed layout
-					<div class="sw_section">
-
-						<div class="custom_select" id="bg_change_select">
-
-							<select>
-
-								<option value="Color">Color</option>
-								<option value="Image">Image</option>
-
-							</select>
-
-						</div>
-
-					</div>
-					<div class="sw_section bg_color">
-
-						<div class="title">Background color:</div> 
-
-						<div class="wrapper">
-
-							<button class="change_bg" id="change_bg_color"></button>
-
-						</div>
-
-					</div>
-					<div class="sw_section bg_images">
-
-						<div class="title">Background image:</div> 
-
-						<div class="wrapper">
-
-							<button class="change_bg" data-src="/images/image_bg_1.jpg"></button>
-							<button class="change_bg" data-src="/images/image_bg_2.jpg"></button>
-
-						</div>
-
-					</div>
-
-					<div class="sw_section">
-
-						<button id="sw_reset" class="button_grey middle_btn">Reset</button>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div> -->
-
-		<!-- - - - - - - - - - - - - - end Styleswitcher - - - - - - - - - - - - - - - - -->
-
-		<!-- - - - - - - - - - - - - - Cookie Message - - - - - - - - - - - - - - - - -->
-
-		<!-- <div class="cookie_message">
-
-			<div class="container">
-
-				<div class="on_the_sides">
-
-					<div class="left_side">Please note this website requires cookies in order to function correctly, they do not store any specific information about your personally.</div>
-
-					<div class="right_side">
-
-						<div class="buttons_row">
-
-							<a href="#" class="button_blue accept_cookie">Accept Cookies</a>
-
-							<a href="#" class="button_dark_grey">Read More</a>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div> -->
-
-		<!-- - - - - - - - - - - - - - End of Cookie Message - - - - - - - - - - - - - - - - -->
-
-		<!-- - - - - - - - - - - - - - Old ie alert message - - - - - - - - - - - - - - - - -->
-
-		<!--[if lt IE 9]>
-
-			<div class="ie_alert_message">
-
-				<div class="container">
-
-					<div class="on_the_sides">
-
-						<div class="left_side">
-
-							<i class="icon-attention-5"></i> <span class="bold">Attention!</span> This page may not display correctly. You are using an outdated version of Internet Explorer. For a faster, safer browsing experience.</span>
-
-						</div>
-	
-						<div class="right_side">
-
-							<a target="_blank" href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode" class="button_black">Update Now!</a>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-				
-		<![endif]-->
-
-		<!-- - - - - - - - - - - - - - End of old ie alert message - - - - - - - - - - - - - - - - -->
-
+		
 		<!-- - - - - - - - - - - - - - Main Wrapper - - - - - - - - - - - - - - - - -->
 
 		<div class="wide_layout">
@@ -300,7 +93,7 @@
 
 									<div class="call_us">
 
-										<span>Call us toll free:</span> <b>(+971) 2- 6444043</b>
+										<span>Call us toll free:</span> <b>(+971) 2- 6444043 </b>
 
 									</div><!--/ .call_us-->
 
@@ -318,15 +111,15 @@
 
 											<div class="open_categories">All Categories</div>
 
-											<ul class="categories_list dropdown">
+											<ul id="website_main_category" class="categories_list dropdown">
 
-												<li class="animated_item"><a href="#">Computers &amp; Tablets</a></li>
+												<!-- <li class="animated_item"><a href="#">Computers &amp; Tablets</a></li>
 												<li class="animated_item"><a href="#">TV &amp; Video</a></li>
 												<li class="animated_item"><a href="#">Home Theater amp; Audio</a></li>
 												<li class="animated_item"><a href="#">Cameras &amp; Accessories</a></li>
 												<li class="animated_item"><a href="#">Printer amp; Scanner</a></li>
 												<li class="animated_item"><a href="#">Moniter &amp; Display</a></li>
-												<li class="animated_item"><a href="#">Cell Phone</a></li>
+												<li class="animated_item"><a href="#">Cell Phone</a></li> -->
 
 											</ul>
 
@@ -350,23 +143,16 @@
 
 										<div class="alignright site_settings">
 
-											<span class="current open_"><img src="/images/flag_en.jpg" alt="">English</span>
+										
 
-											<ul class="dropdown site_setting_list language">
-
-												<li class="animated_item"><a href="#"><img src="/images/flag_en.jpg" alt=""> English</a></li>
-												<li class="animated_item"><a href="#"><img src="/images/flag_g.jpg" alt=""> German</a></li>
-												<li class="animated_item"><a href="#"><img src="/images/flag_s.jpg" alt=""> Spanish</a></li>
-
-											</ul>
-
-										</div><!--/ .alignright.site_settings-->
+										</div>
+										<!--/ .alignright.site_settings-->
 
 										<!-- - - - - - - - - - - - - - End of language change - - - - - - - - - - - - - - - - -->
 										
 										<!-- - - - - - - - - - - - - - Currency change - - - - - - - - - - - - - - - - -->
 
-										<div class="alignright site_settings currency">
+										{{-- <div class="alignright site_settings currency">
 
 											<span class="current open_">USD</span>
 
@@ -378,7 +164,8 @@
 
 											</ul>
 
-										</div><!--/ .alignright.site_settings.currency-->
+										</div> --}}
+										<!--/ .alignright.site_settings.currency-->
 
 										<!-- - - - - - - - - - - - - - End of currency change - - - - - - - - - - - - - - - - -->
 
@@ -444,128 +231,9 @@
 
 										<!-- - - - - - - - - - - - - - Main navigation - - - - - - - - - - - - - - - - -->
 
-										<ul class="theme_menu cats dropdown">
+										<ul id="website_category" class="theme_menu cats dropdown">
 
-											<li class="has_megamenu animated_item"><a href="#"><b>Todays Deals</b></a></li>
-											<li class="has_megamenu animated_item"><a href="#"><b>Most Popular</b></a></li>
-											<li class="has_megamenu animated_item"><a href="#"><b>New Arrivals</b></a></li>
-
-											<li class="has_megamenu animated_item">
-
-												<a href="#">Computers & Tablets</a>
-
-												<!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
-
-												<div class="mega_menu clearfix">
-
-													<!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-													{{-- <div class="mega_menu_item">
-													
-														<ul class="list_of_links">
-
-															<li><a href="#">Allergy &amp; Sinus</a></li>
-															<li><a href="#">Childrens Healthcare</a></li>
-															<li><a href="#">Cough, Cold &amp; Flu</a></li>
-															<li><a href="#">Diabetes Management</a></li>
-															<li><a href="#">Digestion &amp; Nausea</a></li>
-															<li><a href="#">Eye Care</a></li>
-															<li><a href="#">First Aid</a></li>
-															<li><a href="#">Foot Care</a></li>
-															<li><a href="#">Health Clearance</a></li>
-
-														</ul>
-
-													</div> --}}
-													
-													<!--/ .mega_menu_item-->
-
-													<!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-													<!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-													{{-- <div class="mega_menu_item">
-
-														<ul class="list_of_links">
-
-															<li><a href="#">Home Health Care</a></li>
-															<li><a href="#">Home Tests</a></li>
-															<li><a href="#">Incontinence Aids</a></li>
-															<li><a href="#">Natural &amp; Homeopathic</a></li>
-															<li><a href="#">Pain &amp; Fever Relief</a></li>
-															<li><a href="#">Skin Condition Treatments</a></li>
-															<li><a href="#">Sleep &amp; Snoring aids</a></li>
-															<li><a href="#">Stop Smoking Aids</a></li>
-															<li><a href="#">Support &amp; Braces</a></li>
-
-														</ul>
-
-													</div> --}}
-													<!--/ .mega_menu_item-->
-
-													<!-- - - - - - - - - - - - - - End of mega menu item - - - - - - - - - - - - - - - - -->
-
-												</div><!--/ .mega_menu-->
-
-												<!-- - - - - - - - - - - - - - End of mega menu - - - - - - - - - - - - - - - - -->
-
-											</li>
-											<li class="has_megamenu animated_item">
-
-												<a href="#">TV & Video</a>
-
-												<!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
-
-												<!-- <div class="mega_menu type_2 clearfix">
-
-													
-
-													
-													
-													<div class="mega_menu_item">
-														
-														<a href="#">
-															<img src="images/mega_menu_img_1.jpg" alt="">
-														</a>
-
-													</div>
-													
-												</div>
-												 -->
-											</li>
-											<li class="has_megamenu animated_item">
-
-												<a href="#">Home Theater & Audio</a>
-
-												<!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
-
-												<div class="mega_menu clearfix">
-
-													<!-- - - - - - - - - - - - - - Mega menu item - - - - - - - - - - - - - - - - -->
-
-												
-
-												</div><!--/ .mega_menu-->
-
-												<!-- - - - - - - - - - - - - - End of mega menu - - - - - - - - - - - - - - - - -->
-
-											</li>
-											<li class="has_megamenu animated_item">
-
-												<a href="#">Cameras & Camcorders</a>
-
-												<!-- - - - - - - - - - - - - - Mega menu - - - - - - - - - - - - - - - - -->
-
-											
-
-												<!-- - - - - - - - - - - - - - End of mega menu - - - - - - - - - - - - - - - - -->
-
-											</li>
-											<li class="has_megamenu animated_item"><a href="#">Printers & Scanners</a></li>
-											<li class="has_megamenu animated_item"><a href="#">Monitors & Displays</a></li>
-											<li class="has_megamenu animated_item"><a href="#">Cell Phones</a></li>
-											<li class="has_megamenu animated_item"><a href="#">GPS Navigation</a></li>
-											<li class="has_megamenu animated_item"><a href="#" class="all"><b>All Categories</b></a></li>
+																						
 
 										</ul>
 
@@ -584,9 +252,9 @@
 											<ul>
 
 												<li><a href="/">Home</a></li>
-												<li><a href="/account/account">My Account</a></li>
+												<li><a href="/account/dashboard">My Account</a></li>
 												<li><a href="/cart">Shopping Cart</a></li>
-												<li><a href="/checkout">Checkout</a></li>
+										
 												<li><a href="/contact">Contact Us</a></li>
 												<!-- <li class="has_submenu">
 
@@ -761,95 +429,9 @@
 
 										<!-- - - - - - - - - - - - - - Products list - - - - - - - - - - - - - - - - -->
 
-										<div class="shopping_cart dropdown">
+										<div class="shopping_cart dropdown active visible" id="cart-menu">
 
-												<div class="animated_item">
-
-													<p class="title">Recently added item(s)</p>
-
-													<!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-													<div class="clearfix sc_product">
-
-														<a href="#" class="product_thumb"><img src="/images/sc_img_1.jpg" alt=""></a>
-
-														<a href="#" class="product_name">Natural Factors PGX Daily Ultra Matrix...</a>
-
-														<p>1 x $499.00</p>
-
-														<button class="close"></button>
-
-													</div><!--/ .clearfix.sc_product-->
-													
-													<!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-												</div><!--/ .animated_item-->
-
-												<div class="animated_item">
-
-													<!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-													<div class="clearfix sc_product">
-
-														<a href="#" class="product_thumb"><img src="/images/sc_img_2.jpg" alt=""></a>
-
-														<a href="#" class="product_name">Oral-B Glide Pro-Health Floss...</a>
-
-														<p>1 x $499.00</p>
-
-														<button class="close"></button>
-
-													</div><!--/ .clearfix.sc_product-->
-													
-													<!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-												</div><!--/ .animated_item-->
-
-												<div class="animated_item">
-
-													<!-- - - - - - - - - - - - - - Product - - - - - - - - - - - - - - - - -->
-
-													<div class="clearfix sc_product">
-
-														<a href="#" class="product_thumb"><img src="/images/sc_img_3.jpg" alt=""></a>
-
-														<a href="#" class="product_name">Culturelle Kids! Probi-<br>otic Packets 30 ea</a>
-
-														<p>1 x $499.00</p>
-
-														<button class="close"></button>
-
-													</div><!--/ .clearfix.sc_product-->
-													
-													<!-- - - - - - - - - - - - - - End of product - - - - - - - - - - - - - - - - -->
-
-												</div><!--/ .animated_item-->
-
-												<div class="animated_item">
-
-													<!-- - - - - - - - - - - - - - Total info - - - - - - - - - - - - - - - - -->
-
-													<ul class="total_info">
-
-														<li><span class="price">Tax:</span> $0.00</li>
-
-														<li><span class="price">Discount:</span> $37.00</li>
-
-														<li class="total"><b><span class="price">Total:</span> $999.00</b></li>
-
-													</ul>
-													
-													<!-- - - - - - - - - - - - - - End of total info - - - - - - - - - - - - - - - - -->
-
-												</div><!--/ .animated_item-->
-
-												<div class="animated_item">
-
-													<a href="#" class="button_grey">View Cart</a>
-
-													<a href="#" class="button_blue">Checkout</a>
-
-												</div><!--/ .animated_item-->
+												
 
 											</div><!--/ .shopping_cart.dropdown-->
 										
@@ -878,7 +460,7 @@
 			<!-- - - - - - - - - - - - - - End Header - - - - - - - - - - - - - - - - -->
 
             @yield('content')
-
+			
 			<!-- - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
 
 			<footer id="footer" class="type_5">
@@ -1448,61 +1030,7 @@
 
 		<ul class="social_feeds">
 
-			<!-- - - - - - - - - - - - - - Facebook - - - - - - - - - - - - - - - - -->
-
-			<li>
-
-				<button class="icon_btn middle_btn social_facebook open_"><i class="icon-facebook-1"></i></button>
-
-				
-				<section class="dropdown">
-
-					<div class="animated_item">
-
-						<h3 class="title">Join Us on Facebook</h3>
-
-					</div><!--/ .animated_item-->
-
-					<div class="animated_item">
-
-						<div id="fb-root"></div>
-						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="235" data-height="345" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
-					</div><!--/ .animated_item-->
-
-				</section><!--/ .dropdown-->
-
-			</li>
-
-			<!-- - - - - - - - - - - - - - End of Facebook - - - - - - - - - - - - - - - - -->
-
-			<!-- - - - - - - - - - - - - - Twitter - - - - - - - - - - - - - - - - -->
-
-			<li>
-
-				<button class="icon_btn middle_btn social_twitter open_"><i class="icon-twitter"></i></button>
-
-				<section class="dropdown">
-
-					<div class="animated_item">
-
-						<h3 class="title">Latest Tweets</h3>
-
-					</div><!--/ .animated_item-->
-
-					<div class="tweet_list_wrap"></div>
-					 
-					<footer class="animated_item bottom_box">
-
-						<a href="#" class="button_grey middle_btn">Follow Us</a>	
-
-					</footer><!--/ .animated_item-->
-
-				</section><!--/ .dropdown-->
-
-			</li>
-
-			<!-- - - - - - - - - - - - - - End of Twitter - - - - - - - - - - - - - - - - -->
-
+			
 			<!-- - - - - - - - - - - - - - Contact us - - - - - - - - - - - - - - - - -->
 
 			<li>
@@ -1632,11 +1160,12 @@
 		</ul>
 
 		<!-- - - - - - - - - - - - - - End Social feeds - - - - - - - - - - - - - - - - -->
-		
+		<input type="hidden" name="routes" id="routes" value="{{Request::segment(1)}}">
 		<!-- Include Libs & Plugins
 		============================================ -->
 		<script src="/js/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<script src="/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="/js/jquery.appear.js"></script>
 		<script src="/js/owlcarousel/owl.carousel.min.js"></script>
 		<script src="/js/jquery.countdown.plugin.min.js"></script>
@@ -1653,7 +1182,176 @@
 		<script src="/js/theme.plugins.js"></script>
 		<script src="/js/theme.core.js"></script>
 		
-		<!-- extra js -->
-		@yield('extra-js')
+<script>
+	$(document).ready(function(){
+		$.ajax({        
+			url : '/get-cart',
+			type: "GET",
+			success: function(data)
+			{
+				   
+			   var result = data.split('|');
+					  
+
+			   $('.total_price').text(result[0]);
+			   $('#open_shopping_cart').attr("data-amount",result[1]);
+			   
+			   
+			}
+		});
+	});
+		function addCart(id){
+			$.ajax({        
+				url : '/add-cart/'+id,
+				type: "GET",
+				success: function(data)
+				{
+				   	
+				   var result = data.split('|');
+				  		
+
+				   $('.total_price').text(result[0]);
+				   $('#open_shopping_cart').attr("data-amount",result[1]);
+				   
+				   
+				}
+			});
+	}
+	$('#open_shopping_cart').on('click',function(){
+		$.ajax({        
+			url : '/cart-menu/',
+			type: "GET",
+			success: function(data)
+			{
+			   $('#cart-menu').html(data);
+			}
+	   });
+	});
+get_website_category();
+get_website_main_category();
+function get_website_category()
+{
+    $.ajax({        
+        url : '/get_website_category/',
+        type: "GET",
+        success: function(data)
+        {
+           $('#website_category').html(data);
+        }
+   });
+}
+function get_website_main_category()
+{
+    $.ajax({        
+        url : '/get_website_main_category/',
+        type: "GET",
+        success: function(data)
+        {
+           $('#website_main_category').html(data);
+        }
+   });
+}
+function get_home_product(id)
+{
+	//event.preventDefault();
+    $.ajax({        
+        url : '/get_home_product/'+id,
+        type: "GET",
+        success: function(data)
+        {
+		   $('#get_home_product').html(data);
+		   //window.location.href=""
+        }
+    });
+}
+</script>
+<script>
+get_sidebar_category();
+function get_sidebar_category()
+{
+    $.ajax({        
+        url : '/get_website_category/',
+        type: "GET",
+        success: function(data)
+        {
+           $('#get_sidebar_category').html(data);
+        }
+   });
+}
+function removeCartItem(id){
+	var route = $('#routes').val();
+	$.ajax({        
+        url : '/remove-cart/'+id,
+        type: "GET",
+        success: function(data)
+        {
+			if(route == 'cart'){
+			cartSubFunction();
+			}
+			
+        }
+   });
+}
+function updateqtyPlus(id){
+	$.ajax({        
+		url : '/cart-qty-plus/'+id,
+		type: "GET",
+		success: function(data)
+		{
+			   
+			cartSubFunction();
+		   
+		   
+		}
+	});
+}
+function updateqtyMinus(id){
+	$.ajax({        
+		url : '/cart-qty-minus/'+id,
+		type: "GET",
+		success: function(data)
+		{
+			   
+			cartSubFunction();
+		   
+		   
+		}
+	});
+}
+function cartSubFunction(){
+	$.ajax({        
+		url : '/cart-data',
+		type: "GET",
+		success: function(data)
+		{
+			   
+			$('#shopping_table').html(data);
+			cartMenuResult();
+		   
+		}
+	});
+}
+
+function cartMenuResult(){
+	$.ajax({        
+		url : '/get-cart',
+		type: "GET",
+		success: function(data)
+		{
+			   
+		   var result = data.split('|');
+				  
+
+		   $('.total_price').text(result[0]);
+		   $('#open_shopping_cart').attr("data-amount",result[1]);
+		   
+		   
+		}
+	});
+}
+
+</script>
+@yield('custom-js')
+		
 	</body>
 </html>

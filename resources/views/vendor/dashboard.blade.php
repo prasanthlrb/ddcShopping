@@ -1,10 +1,11 @@
 @extends('vendor.include.app')
+@section('extra-css')
+<link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/cryptocoins/cryptocoins.css')}}">
+@endsection
 @section('content')
 
 <div class="app-content content">
     <div class="content-wrapper">
-      <div class="content-header row">
-      </div>
       <div class="content-body">
           <div class="row">
               <div class="col-xl-3 col-lg-6 col-12">
@@ -1031,5 +1032,10 @@
     </div>
   </div>
 
+@endsection
+@section('extra-js')
+<script src="{{ asset('app-assets/vendors/js/charts/chart.min.js')}}" type="text/javascript"></script>
+<script src="{{ asset('app-assets/vendors/js/charts/echarts/echarts.js')}}" type="text/javascript"></script>
+<script src="{{ asset('app-assets/js/scripts/pages/dashboard-crypto.js')}}" type="text/javascript"></script>
 @endsection
 

@@ -64,7 +64,9 @@
 @import "reset.css";
 @import "styleswitcher.css";
 
-
+ul.account_bar {
+    margin-top: 15px;
+}
 .accSidebarActive{
 	background-color: #3798da !important;
 	color: #fff;

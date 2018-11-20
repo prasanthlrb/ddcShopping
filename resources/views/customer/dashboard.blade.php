@@ -26,13 +26,17 @@
 
 							<h1>My Profile</h1>
 
-							
+							@if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
 							<section class="theme_box">
 
 								<h4>Personal Information</h4>
 
-								<p>prasanth s<br><a href="#" class="mail_to">male</a></p>
+								<p>{{Auth::user()->name}}<br><a href="#" class="mail_to">male</a></p>
 
 								<div class="buttons_row">
 
@@ -46,7 +50,7 @@
 
 								<h4>Contact Information</h4>
 
-								<p>Prasanth S<br><a href="#" class="mail_to">prasanthats@gmail.com</a></p>
+								<p>{{Auth::user()->name}}<br><a href="#" class="mail_to">{{Auth::user()->email}}</a></p>
 
 								<div class="buttons_row">
 
@@ -61,7 +65,7 @@
 
 								<h4>Mobile Number</h4>
 
-								<p><a href="#" class="mail_to">9171035128</a></p>
+								<p><a href="#" class="mail_to">{{Auth::user()->phone}}</a></p>
 
 								<div class="buttons_row">
 
@@ -74,21 +78,7 @@
 
 							<section class="theme_box">
 
-								<h4>FAQs</h4>
-
-								<p>
-										What happens when I update my email address (or mobile number)?<br>
-										Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).<br>
-										
-										When will my DDC account be updated with the new email address (or mobile number)?<br> 
-										It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.<br>
-										
-										What happens to my existing DDC account when I update my email address (or mobile number)?<br>
-										Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully functional. You'll continue seeing your Order history, saved information and personal details.<br>
-										
-										Does my Seller account get affected when I update my email address?<br>
-										DDC has a 'single sign-on' policy. Any changes will reflect in your Seller account also.	<br>
-								</p>
+								
 
 							</section>
 

@@ -24,7 +24,7 @@ Dropzone.options.dpzSingleFile = {
 ********************************************/
 Dropzone.options.dpzMultipleFiles = {
     paramName: "file", // The name that will be used to transfer the file
-    maxFilesize: 0.5, // MB
+    maxFilesize: 2, // MB
     clickable: true
 }
 
@@ -35,7 +35,8 @@ Dropzone.options.dpzMultipleFiles = {
 new Dropzone(document.body, { // Make the whole body a dropzone
     url: "#", // Set the url
     previewsContainer: "#dpz-btn-select-files", // Define the container to display the previews
-    clickable: "#select-files" // Define the element that should be used as click trigger to select files.
+    clickable: "#select-files", // Define the element that should be used as click trigger to select files.
+    autoProcessQueue: false
 });
 
 

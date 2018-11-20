@@ -722,7 +722,7 @@ var Core = (function(Core){
 			openModalWindow : function(){
 
 				$('body').on('click.modal', '[data-modal-url]', function(event){
-
+			
 					$.arcticmodal({
 						url : $(this).data('modal-url'),
 						type : 'ajax',

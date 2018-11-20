@@ -14,16 +14,30 @@
   <!-- END VENDOR CSS-->
   <!-- BEGIN MODERN CSS-->
   <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/app.css')}}">
+  <style>
+    @media screen and (min-width: 992px) {
+      .header-navbar .navbar-header .navbar-brand .brand-logo {
+          width: 75%;
+          margin-top: -9px;
+          position: relative;
+          left: 20%;
+      }
+  
+  }
+  .review-product{
+      width: 35%;
+  }
+  </style>
   <!-- END MODERN CSS-->
   <!-- BEGIN Page Level CSS-->
   <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/core/menu/menu-types/vertical-menu.css')}}">
   <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/core/colors/palette-gradient.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/cryptocoins/cryptocoins.css')}}">
+  
   <!-- END Page Level CSS-->
   <!-- BEGIN Custom CSS-->
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css')}}">
   <!-- END Custom CSS-->
-  @yield('custom-css')
+  @yield('extra-css')
 </head>
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar"
 data-open="click" data-menu="vertical-menu" data-col="2-columns">
@@ -176,11 +190,11 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
                 </li>
               </ul>
             </li>  --}}
-            <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+            {{--  <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
               <div class="search-input">
                 <input class="input" type="text" placeholder="Explore DDC...">
               </div>
-            </li>
+            </li>  --}}
           </ul>
           <ul class="nav navbar-nav float-right">
             <li class="dropdown dropdown-user nav-item">
@@ -188,8 +202,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
                 <span class="mr-1">Hello,
                   <span class="user-name text-bold-700">Thowsif</span>
                 </span>
-                <span class="avatar avatar-online">
-                  <img src="../../../app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><i></i></span>
+                
               </a>
               <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
                 {{--  <a class="dropdown-item" href="#"><i class="ft-mail"></i> My Inbox</a>
@@ -403,7 +416,9 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
       </ul>
     </div>
   </div>
- @yield('content')
+  <div class="app-content content">
+   @yield('section')
+  </div>
   <!-- ////////////////////////////////////////////////////////////////////////////-->
   <footer class="footer footer-static footer-light navbar-border navbar-shadow">
     <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
@@ -414,21 +429,11 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
   </footer>
   <!-- BEGIN VENDOR JS-->
   <script src="{{ asset('app-assets/vendors/js/vendors.min.js')}}" type="text/javascript"></script>
-  <!-- BEGIN VENDOR JS-->
-  <!-- BEGIN PAGE VENDOR JS-->
-  <script src="{{ asset('app-assets/vendors/js/charts/chart.min.js')}}" type="text/javascript"></script>
-  <script src="{{ asset('app-assets/vendors/js/charts/echarts/echarts.js')}}" type="text/javascript"></script>
-  <!-- END PAGE VENDOR JS-->
-  <!-- BEGIN MODERN JS-->
   <script src="{{ asset('app-assets/js/core/app-menu.js')}}" type="text/javascript"></script>
   <script src="{{ asset('app-assets/js/core/app.js')}}" type="text/javascript"></script>
   <script src="{{ asset('app-assets/js/scripts/customizer.js')}}" type="text/javascript"></script>
-  <!-- END MODERN JS-->
-  <!-- BEGIN PAGE LEVEL JS-->
-  <script src="{{ asset('app-assets/js/scripts/pages/dashboard-crypto.js')}}" type="text/javascript"></script>
-  <!-- END PAGE LEVEL JS-->
 
   <!--  Constom js  -->
-  @yield('custom-js')
+  @yield('extra-js')
 </body>
 </html>
